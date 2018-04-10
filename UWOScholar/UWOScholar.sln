@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27428.2005
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UWOScholar", "UWOScholar\UWOScholar.csproj", "{A7AAC205-83A7-4F75-BEB1-3DAA0F8224ED}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UWOScholarAndroid", "UWOScholar\UWOScholarAndroid.csproj", "{A7AAC205-83A7-4F75-BEB1-3DAA0F8224ED}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UWOScholarWeb", "UWOScholarWeb\UWOScholarWeb.csproj", "{1F7A6E91-5F78-4F85-A940-8FC726854C3A}"
 EndProject
