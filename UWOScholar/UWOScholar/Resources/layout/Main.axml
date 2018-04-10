@@ -1,7 +1,66 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    >
-</LinearLayout>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:light="clr-namespace:Xamarin.Forms.Themes;assembly=Xamarin.Forms.Theme.Light"
+    android:minWidth="25px"
+    android:minHeight="25px"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@android:color/background_light"
+    android:id="@+id/relativeLayout1">
+    <ImageView
+        android:id="@+id/UWOSeal"
+        android:layout_width="match_parent"
+        android:layout_height="224dp"
+        android:adjustViewBounds="true"
+        android:padding="20dp"
+        android:src="@drawable/UWOSeal"
+        android:layout_margin="20dp" />
+    <EditText
+        android:id="@+id/username"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_below="@+id/UWOSeal"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:hint="Username..."
+        android:textColor="#333639"
+        android:textColorHint="#333639"
+        android:padding="5dp" />
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_below="@+id/username"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:hint="Password..."
+        android:textColor="#333639"
+        android:textColorHint="#333639"
+        android:padding="5dp" />
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_below="@+id/password"
+        android:layout_width="165dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="10dp"
+        android:text="Login"
+        android:background="#ffffff"
+        android:textColor="#333639" />
+    <Button
+        android:id="@+id/btnRegister"
+        android:layout_below="@+id/password"
+        android:layout_toRightOf="@+id/btnLogin"
+        android:layout_width="165dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="20dp"
+        android:text="Register"
+        android:background="#ffffff"
+        android:textColor="#333639" />
+</RelativeLayout>
