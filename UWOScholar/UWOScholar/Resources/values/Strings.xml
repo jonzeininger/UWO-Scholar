@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-  <string name="Register">Create My Account</string>
+  <string name="CreateAccount">Create My Account</string>
+  <string name="Register">Register</string>
   <string name="Home">Login</string>
   <string name="app_name">UWOScholar</string>
 </resources>

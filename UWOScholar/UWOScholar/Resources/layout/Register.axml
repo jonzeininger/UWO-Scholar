@@ -1,57 +1,65 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent">
-  <EditText
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:light="clr-namespace:Xamarin.Forms.Themes;assembly=Xamarin.Forms.Theme.Light"
+    android:minWidth="25px"
+    android:minHeight="25px"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@android:color/background_light"
+    android:id="@+id/relativeLayoutRegister">
+    <EditText
+        android:id="@+id/txtUsername"
+        android:layout_width="match_parent"
+        android:layout_margin="20dp"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:background="#ffffff"
+        android:hint="Username..."
+        android:textColor="#333639"
+        android:textColorHint="#333639" />
+    <EditText
         android:id="@+id/txtEmail"
         android:layout_width="match_parent"
-        android:layout_marginLeft="20dp"
-        android:layout_marginRight="20dp"
+        android:layout_margin="20dp"
+        android:layout_below="@+id/txtUsername"
         android:layout_height="wrap_content"
+        android:padding="5dp"
         android:background="#ffffff"
         android:hint="Email..."
         android:textColor="#333639"
+        android:textColorHint="#333639" />
+    <EditText
+        android:id="@+id/txtPassword"
+        android:layout_width="match_parent"
+        android:layout_margin="20dp"
+        android:layout_below="@+id/txtEmail"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:hint="Password..."
+        android:textColor="#333639"
         android:textColorHint="#333639"
-        android:padding="5dp" />
-  <EditText
-      android:id="@+id/passwordRegister"
-      android:layout_width="match_parent"
-      android:layout_marginLeft="20dp"
-      android:layout_marginTop="20dp"
-      android:layout_marginRight="20dp"
-      android:layout_below="@+id/emailRegister"
-      android:layout_height="wrap_content"
-      android:background="#ffffff"
-      android:hint="Password..."
-      android:inputType="password"
-      android:textColor="#333639"
-      android:textColorHint="#333639"
-      android:padding="5dp" />
-  <EditText
-      android:id="@+id/passwordConfirm"
-      android:layout_width="match_parent"
-      android:layout_marginLeft="20dp"
-      android:layout_marginTop="20dp"
-      android:layout_marginRight="20dp"
-      android:layout_below="@+id/passwordRegister"
-      android:layout_height="wrap_content"
-      android:background="#ffffff"
-      android:hint="Confirm Password..."
-      android:inputType="password"
-      android:textColor="#333639"
-      android:textColorHint="#333639"
-      android:padding="5dp" />
-  <Button
-          android:id="@+id/btnCreateAcc"
-          android:layout_below="@+id/passwordRegister"
-          android:layout_width="165dp"
-          android:layout_height="wrap_content"
-          android:layout_marginTop="15dp"
-          android:layout_marginLeft="20dp"
-          android:layout_marginRight="10dp"
-          android:text="@string/Register"
-          android:background="#ffffff"
-          android:textColor="#333639"
-          android:enabled="true" />
-</LinearLayout>
+        android:padding="5dp"
+        android:inputType="textPassword" />
+    <EditText
+        android:id="@+id/txtConfirmPassword"
+        android:layout_width="match_parent"
+        android:layout_margin="20dp"
+        android:layout_below="@+id/txtPassword"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:hint="Confirm Password..."
+        android:textColor="#333639"
+        android:textColorHint="#333639"
+        android:padding="5dp"
+        android:inputType="textPassword" />
+    <Button
+        android:id="@+id/btnCreateAcc"
+        android:layout_below="@+id/txtConfirmPassword"
+        android:layout_width="165dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:text="@string/CreateAccount"
+        android:background="#ffffff"
+        android:textColor="#333639"
+        android:enabled="true" />
+</RelativeLayout>
