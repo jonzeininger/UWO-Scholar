@@ -22,7 +22,7 @@ namespace UWOScholar
             btnLogin.Click += delegate {
                 if(username.ToString() == "Admin" && password.ToString() == "1234")
                 {
-                    SetContentView(Resource.Layout.Home);
+                    //go to home screen
                 }
             };
         }
