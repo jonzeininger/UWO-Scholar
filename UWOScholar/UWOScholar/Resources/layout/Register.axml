@@ -3,5 +3,41 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
-
+  <EditText
+        android:id="@+id/emailRegister"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:hint="Email..."
+        android:textColor="#333639"
+        android:textColorHint="#333639"
+        android:padding="5dp" />
+  <EditText
+      android:id="@+id/passwordRegister"
+      android:layout_width="match_parent"
+      android:layout_marginLeft="20dp"
+      android:layout_marginTop="20dp"
+      android:layout_marginRight="20dp"
+      android:layout_below="@+id/emailRegister"
+      android:layout_height="wrap_content"
+      android:background="#ffffff"
+      android:hint="Password..."
+      android:inputType="password"
+      android:textColor="#333639"
+      android:textColorHint="#333639"
+      android:padding="5dp" />
+  <Button
+          android:id="@+id/btnCreateAcc"
+          android:layout_below="@+id/passwordRegister"
+          android:layout_width="165dp"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="15dp"
+          android:layout_marginLeft="20dp"
+          android:layout_marginRight="10dp"
+          android:text="@string/Register"
+          android:background="#ffffff"
+          android:textColor="#333639"
+          android:enabled="true" />
 </LinearLayout>
