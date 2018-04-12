@@ -16,6 +16,7 @@ namespace UWOScholarAndroid
     [Activity(Label = "Home")]
     public class HomeActivity : Activity
     {
+        Toolbar homeToolbar;
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
@@ -23,7 +24,11 @@ namespace UWOScholarAndroid
             // Create your application here
             SetContentView(Resource.Layout.Home);
 
+            homeToolbar = FindViewById<Toolbar>(Resource.Id.toolbar);
+            SetActionBar(homeToolbar);
+            ActionBar.Title = "UWO Scholar Home";
 
+            
         }
     }
 }

@@ -1,5 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent" />
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:light="clr-namespace:Xamarin.Forms.Themes;assembly=Xamarin.Forms.Theme.Light"
+    android:minWidth="25px"
+    android:minHeight="25px"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@android:color/background_light"
+    android:id="@+id/relativeLayout1">
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar" />
+    <TextView
+        android:maxLines="50"
+        android:text="Welcome to UWO Scholar! The heart of studying on and off campus. This app was made by students for students. It will allow you to build flashcards specific to your classes and study your flashcards without distractions. If you are a UWO student sign in below to check availability of computers on campus!"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/toolbar"
+        android:layout_height="wrap_content"
+        android:id="@+id/lblWelcome"
+        android:layout_margin="20dp"
+        android:padding="5dp"
+        android:textColor="#333639" />
+</RelativeLayout>

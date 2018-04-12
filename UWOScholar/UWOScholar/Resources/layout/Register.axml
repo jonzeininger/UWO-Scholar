@@ -7,9 +7,13 @@
     android:layout_height="fill_parent"
     android:background="@android:color/background_light"
     android:id="@+id/relativeLayoutRegister">
+  <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar" />
     <EditText
         android:id="@+id/txtUsername"
         android:layout_width="match_parent"
+        android:layout_below="@+id/toolbar"
         android:layout_margin="20dp"
         android:layout_height="wrap_content"
         android:padding="5dp"
@@ -55,10 +59,23 @@
     <Button
         android:id="@+id/btnCreateAcc"
         android:layout_below="@+id/txtConfirmPassword"
+        android:layout_alignParentLeft="true"
+        android:layout_toLeftOf="@+id/btnAlreadyUser"
         android:layout_width="165dp"
         android:layout_height="wrap_content"
         android:layout_margin="20dp"
         android:text="@string/CreateAccount"
+        android:background="#ffffff"
+        android:textColor="#333639"
+        android:enabled="true" />
+    <Button
+        android:id="@+id/btnAlreadyUser"
+        android:layout_below="@+id/txtConfirmPassword"
+        android:layout_alignParentRight="true"
+        android:layout_width="165dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:text="@string/AlreadyUser"
         android:background="#ffffff"
         android:textColor="#333639"
         android:enabled="true" />

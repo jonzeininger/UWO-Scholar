@@ -6,6 +6,7 @@ using UWOScholar;
 using SQLite;
 using System.IO;
 using System;
+using Android.Views;
 
 namespace UWOScholarAndroid
 {
@@ -16,6 +17,7 @@ namespace UWOScholarAndroid
         EditText txtPassword;
         Button btnLogin;
         Button btnRegister;
+        Toolbar toolbarLogin;
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
@@ -31,6 +33,10 @@ namespace UWOScholarAndroid
             btnLogin.Click += BtnLogin_Click;
             btnRegister.Click += BtnRegister_Click;
             CreateDB();
+
+            toolbarLogin = FindViewById<Toolbar>(Resource.Id.toolbar);
+            SetActionBar(toolbarLogin);
+            ActionBar.Title = "UWO Scholar";
         }
 
         private void BtnLogin_Click(object sender, System.EventArgs e)

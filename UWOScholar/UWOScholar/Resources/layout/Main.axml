@@ -1,15 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:light="clr-namespace:Xamarin.Forms.Themes;assembly=Xamarin.Forms.Theme.Light"
+    xmlns:tools="http://schemas.android.com/tools"
     android:minWidth="25px"
     android:minHeight="25px"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
     android:background="@android:color/background_light"
     android:id="@+id/relativeLayout1">
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar" />
     <ImageView
         android:id="@+id/UWOSeal"
         android:layout_width="match_parent"
+        android:layout_below="@+id/toolbar"
         android:layout_height="224dp"
         android:adjustViewBounds="true"
         android:padding="20dp"

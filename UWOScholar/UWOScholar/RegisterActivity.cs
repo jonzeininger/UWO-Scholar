@@ -23,6 +23,8 @@ namespace UWOScholarAndroid
         EditText txtPassword;
         EditText txtConfirmPassword;
         Button btnCreateAcc;
+        Button btnAlreadyUser;
+        Toolbar hometoolbar;
 
         protected override void OnCreate(Bundle savedInstanceState)
         {
@@ -35,8 +37,14 @@ namespace UWOScholarAndroid
             txtPassword = FindViewById<EditText>(Resource.Id.txtPassword);
             txtConfirmPassword = FindViewById<EditText>(Resource.Id.txtConfirmPassword);
             btnCreateAcc = FindViewById<Button>(Resource.Id.btnCreateAcc);
+            btnAlreadyUser = FindViewById<Button>(Resource.Id.btnAlreadyUser);
+            hometoolbar = FindViewById<Toolbar>(Resource.Id.toolbar);
+
+            SetActionBar(hometoolbar);
+            ActionBar.Title = "Register";
 
             btnCreateAcc.Click += BtnCreateAcc_Click;
+            btnAlreadyUser.Click += BtnAlreadyUser_Click;
         }
 
         private void BtnCreateAcc_Click(object sender, System.EventArgs e)
@@ -68,6 +76,11 @@ namespace UWOScholarAndroid
                 Toast.MakeText(this, ex.ToString(), ToastLength.Short).Show();
             }
             
+        }
+        private void BtnAlreadyUser_Click(object sender, System.EventArgs e)
+        {
+            Intent backActivity = new Intent(this, typeof(MainActivity));
+            StartActivity(backActivity);
         }
     }
 }
