@@ -1,6 +1,7 @@
 ﻿using Android.App;
 using Android.Widget;
 using Android.OS;
+using Android.Content;
 
 namespace UWOScholar
 {
@@ -14,16 +15,19 @@ namespace UWOScholar
             // Set our view from the "main" layout resource
             SetContentView(Resource.Layout.Main);
 
-            var username = FindViewById<EditText>(Resource.Id.username);
-            var password = FindViewById<EditText>(Resource.Id.password);
-            Button btnLogin = FindViewById<Button>(Resource.Id.btnLogin);
+           
+            Button btnLogin = (Button)FindViewById(Resource.Id.btnLogin);
             Button btnRegister = FindViewById<Button>(Resource.Id.btnRegister);
             
             btnLogin.Click += delegate {
-                if(username.ToString() == "Admin" && password.ToString() == "1234")
-                {
-                    //go to home screen
-                }
+                var username = (EditText)FindViewById(Resource.Id.username);
+                var password = (EditText)FindViewById(Resource.Id.password);
+                //if()
+                //{
+                    Intent nextActivity = new Intent(this, typeof(HomeActivity));
+
+                    StartActivity(nextActivity);
+                //}
             };
         }
     }

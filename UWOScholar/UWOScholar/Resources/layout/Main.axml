@@ -48,9 +48,10 @@
         android:layout_marginTop="15dp"
         android:layout_marginLeft="20dp"
         android:layout_marginRight="10dp"
-        android:text="Login"
+        android:text="@string/Home"
         android:background="#ffffff"
-        android:textColor="#333639" />
+        android:textColor="#333639"
+        android:enabled="true" />
     <Button
         android:id="@+id/btnRegister"
         android:layout_below="@+id/password"
