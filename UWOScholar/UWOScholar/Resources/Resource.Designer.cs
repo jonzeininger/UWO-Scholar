@@ -11,7 +11,7 @@
 
 [assembly: global::Android.Runtime.ResourceDesignerAttribute("UWOScholar.Resource", IsApplication=true)]
 
-namespace UWOScholar
+namespace UWOScholarAndroid
 {
 	
 	

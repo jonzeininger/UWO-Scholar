@@ -10,7 +10,7 @@ using Android.Runtime;
 using Android.Views;
 using Android.Widget;
 
-namespace UWOScholar
+namespace UWOScholarAndroid
 {
     [Activity(Label = "Home")]
     public class HomeActivity : Activity
