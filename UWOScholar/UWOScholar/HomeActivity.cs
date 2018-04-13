@@ -28,7 +28,18 @@ namespace UWOScholarAndroid
             SetActionBar(homeToolbar);
             ActionBar.Title = "UWO Scholar Home";
 
-            
+        
+        }
+        public override bool OnCreateOptionsMenu(IMenu menu)
+        {
+            MenuInflater.Inflate(Resource.Menu.top_menus, menu);
+            return base.OnCreateOptionsMenu(menu);
+        }
+
+        public override bool OnOptionsItemSelected(IMenuItem item)
+        {
+            Toast.MakeText(this, "Action selected: " + item.TitleFormatted, ToastLength.Short).Show();
+            return base.OnOptionsItemSelected(item);
         }
     }
 }
