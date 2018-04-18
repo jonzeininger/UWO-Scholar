@@ -7,6 +7,7 @@ using Android.App;
 using Android.Content;
 using Android.OS;
 using Android.Runtime;
+using Android.Support.V7.App;
 using Android.Views;
 using Android.Widget;
 using UWOScholarAndroid;
@@ -14,10 +15,11 @@ using UWOScholarAndroid;
 namespace UWOScholar
 {
     [Activity(Label = "FolderActivity")]
-    public class FolderActivity : Activity
+    public class FolderActivity : AppCompatActivity
     {
         Toolbar toolbarTop;
         Toolbar menuBottom;
+        Button btnAddFolder;
         private List<string> folders;
         protected override void OnCreate(Bundle savedInstanceState)
         {
@@ -47,6 +49,20 @@ namespace UWOScholar
             toolbarTop = FindViewById<Toolbar>(Resource.Id.toolbar);
             SetActionBar(toolbarTop);
             ActionBar.Title = "My Backpack";
+
+
+            btnAddFolder = FindViewById<Button>(Resource.Id.btnAddFolder);
+            btnAddFolder.Click += BtnAddFolder_Click;
+        }
+
+        private void BtnAddFolder_Click(object sender, System.EventArgs e)
+        {
+            LayoutInflater addFolderLayoutInflator = LayoutInflater.From(this);
+            View popupView = addFolderLayoutInflator.Inflate(Resource.Layout.UserInputFolder);
+            Android.Support.V7.App.AlertDialog.Builder alertDialogBuilder = new Android.Support.V7.App.AlertDialog.Builder(this);
+            alertDialogBuilder.SetView(popupView);
+
+            var folderTitle = popupView.FindViewById<EditText>(Resource.Id.editText1);
         }
     }
 }
