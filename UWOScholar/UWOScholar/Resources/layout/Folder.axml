@@ -16,23 +16,14 @@
         android:layout_height="fill_parent"
         android:id="@+id/main_content"
         android:layout_below="@id/toolbar">
-        <TextView
-            android:maxLines="50"
-            android:text="Welcome to UWO Scholar! The heart of studying on and off campus. This app was made by students for students. It will allow you to build flashcards specific to your classes and study your flashcards without distractions. If you are a UWO student sign in below to check availability of computers on campus!"
-            android:layout_width="match_parent"
-            android:layout_below="@+id/toolbar"
-            android:layout_height="wrap_content"
-            android:id="@+id/lblWelcome"
-            android:layout_margin="20dp"
-            android:padding="5dp"
-            android:textColor="#333639" />
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/btnCalculator"
+            android:id="@+id/btnAddFolder"
+            android:layout_marginTop="20dp"
             android:layout_marginLeft="20dp"
             android:layout_marginRight="20dp"
-            android:text="@string/Calc"
+            android:text="@string/AddAFolder"
             android:background="#ffcc00"
             android:textColor="#333639" />
         <ImageView
