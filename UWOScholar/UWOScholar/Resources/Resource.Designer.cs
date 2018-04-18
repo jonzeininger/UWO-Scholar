@@ -69,74 +69,77 @@ namespace UWOScholar
 		public partial class Id
 		{
 			
-			// aapt resource value: 0x7f080007
-			public const int UWOSeal = 2131230727;
+			// aapt resource value: 0x7f080008
+			public const int UWOSeal = 2131230728;
 			
 			// aapt resource value: 0x7f080003
 			public const int btnAddFolder = 2131230723;
 			
+			// aapt resource value: 0x7f080013
+			public const int btnAlreadyUser = 2131230739;
+			
+			// aapt resource value: 0x7f080007
+			public const int btnCalculator = 2131230727;
+			
 			// aapt resource value: 0x7f080012
-			public const int btnAlreadyUser = 2131230738;
-			
-			// aapt resource value: 0x7f080006
-			public const int btnCalculator = 2131230726;
-			
-			// aapt resource value: 0x7f080011
-			public const int btnCreateAcc = 2131230737;
-			
-			// aapt resource value: 0x7f08000a
-			public const int btnLogin = 2131230730;
+			public const int btnCreateAcc = 2131230738;
 			
 			// aapt resource value: 0x7f08000b
-			public const int btnRegister = 2131230731;
+			public const int btnLogin = 2131230731;
 			
-			// aapt resource value: 0x7f080005
-			public const int lblWelcome = 2131230725;
+			// aapt resource value: 0x7f08000c
+			public const int btnRegister = 2131230732;
+			
+			// aapt resource value: 0x7f080004
+			public const int folderListView = 2131230724;
+			
+			// aapt resource value: 0x7f080006
+			public const int lblWelcome = 2131230726;
 			
 			// aapt resource value: 0x7f080002
 			public const int main_content = 2131230722;
 			
-			// aapt resource value: 0x7f080004
-			public const int menu = 2131230724;
-			
-			// aapt resource value: 0x7f080013
-			public const int menuFolder = 2131230739;
+			// aapt resource value: 0x7f080005
+			public const int menu = 2131230725;
 			
 			// aapt resource value: 0x7f080014
-			public const int menuHome = 2131230740;
+			public const int menuFolder = 2131230740;
 			
 			// aapt resource value: 0x7f080015
-			public const int menuLabCheck = 2131230741;
+			public const int menuHome = 2131230741;
 			
 			// aapt resource value: 0x7f080016
-			public const int menu_edit = 2131230742;
+			public const int menuLabCheck = 2131230742;
 			
-			// aapt resource value: 0x7f080009
-			public const int password = 2131230729;
+			// aapt resource value: 0x7f080017
+			public const int menu_edit = 2131230743;
+			
+			// aapt resource value: 0x7f08000a
+			public const int password = 2131230730;
 			
 			// aapt resource value: 0x7f080000
 			public const int relativeLayout1 = 2131230720;
 			
-			// aapt resource value: 0x7f08000c
-			public const int relativeLayoutRegister = 2131230732;
+			// aapt resource value: 0x7f08000d
+			public const int relativeLayoutRegister = 2131230733;
 			
 			// aapt resource value: 0x7f080001
 			public const int toolbar = 2131230721;
 			
-			// aapt resource value: 0x7f080010
-			public const int txtConfirmPassword = 2131230736;
-			
-			// aapt resource value: 0x7f08000e
-			public const int txtEmail = 2131230734;
+			// aapt resource value: 0x7f080011
+			public const int txtConfirmPassword = 2131230737;
 			
 			// aapt resource value: 0x7f08000f
-			public const int txtPassword = 2131230735;
+			public const int txtEmail = 2131230735;
 			
-			// aapt resource value: 0x7f08000d
-			public const int txtUsername = 2131230733;
+			// aapt resource value: 0x7f080010
+			public const int txtPassword = 2131230736;
 			
-			// aapt resource value: 0x7f080008
-			public const int username = 2131230728;
+			// aapt resource value: 0x7f08000e
+			public const int txtUsername = 2131230734;
+			
+			// aapt resource value: 0x7f080009
+			public const int username = 2131230729;
 			
 			static Id()
 			{

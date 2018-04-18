@@ -52,6 +52,10 @@ namespace UWOScholarAndroid
 
         
         }
+        private void MenuItemClicked(object sender, System.EventArgs e)
+        {
+
+        }
         public override bool OnCreateOptionsMenu(IMenu menu)
         {
             MenuInflater.Inflate(Resource.Menu.top_menus, menu);

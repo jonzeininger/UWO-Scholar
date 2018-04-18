@@ -18,6 +18,7 @@ namespace UWOScholar
     {
         Toolbar toolbarTop;
         Toolbar menuBottom;
+        private List<string> folders;
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
