@@ -25,15 +25,20 @@ namespace UWOScholarAndroid
             // Set our view from the "main" layout resource
             SetContentView(Resource.Layout.Main);
 
+            //Saves values of UI to variables
             txtUsername = FindViewById<EditText>(Resource.Id.username);
             txtPassword = FindViewById<EditText>(Resource.Id.password);
             btnLogin = FindViewById<Button>(Resource.Id.btnLogin);
             btnRegister = FindViewById<Button>(Resource.Id.btnRegister);
 
+            //Creates the click event for each button
             btnLogin.Click += BtnLogin_Click;
             btnRegister.Click += BtnRegister_Click;
+
+            //Call the method to create the database
             CreateDB();
 
+            //Creates and sets the toolbar for the Main Page.
             toolbarLogin = FindViewById<Toolbar>(Resource.Id.toolbar);
             SetActionBar(toolbarLogin);
             ActionBar.Title = "UWO Scholar";
@@ -43,10 +48,15 @@ namespace UWOScholarAndroid
         {
             try
             {
-                string dpPath = Path.Combine(System.Environment.GetFolderPath(System.Environment.SpecialFolder.Personal), "user.db3"); //Call Database  
+                //Call Database
+                string dpPath = Path.Combine(System.Environment.GetFolderPath(System.Environment.SpecialFolder.Personal), "user.db3");  
                 var db = new SQLiteConnection(dpPath);
-                var data = db.Table<LoginTable>(); //Call Table  
-                var data1 = data.Where(x => x.email == txtUsername.Text || x.username == txtUsername.Text && x.password == txtPassword.Text).FirstOrDefault(); //Linq Query  
+
+                //Call Table 
+                var data = db.Table<LoginTable>();
+
+                //Linq Query
+                var data1 = data.Where(x => x.email == txtUsername.Text || x.username == txtUsername.Text && x.password == txtPassword.Text).FirstOrDefault();   
                 if (data1 != null)
                 {
                     Intent nextActivity = new Intent(this, typeof(HomeActivity));
@@ -73,7 +83,9 @@ namespace UWOScholarAndroid
         {
             var output = "";
             output += "Creating Database if it doesnt exist";
-            string dpPath = Path.Combine(System.Environment.GetFolderPath(System.Environment.SpecialFolder.Personal), "user.db3"); //Create New Database  
+
+            //Create New Database 
+            string dpPath = Path.Combine(System.Environment.GetFolderPath(System.Environment.SpecialFolder.Personal), "user.db3"); 
             var db = new SQLiteConnection(dpPath);
             output += "\n database Created....";
             return output;

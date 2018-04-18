@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?> 
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+  <item 
+       android:id="@+id/menuFolder"
+       android:icon="@mipmap/ic_folder_black_18dp"
+       android:showAsAction="ifRoom"
+       android:title="Folder" />
+  <item
+       android:id="@+id/menuHome"
+       android:icon="@mipmap/ic_home_black_18dp"
+       android:showAsAction="ifRoom"
+       android:title="Home" />
+  <item
+       android:id="@+id/menuLabCheck"
+       android:icon="@mipmap/ic_school_black_18dp"
+       android:showAsAction="ifRoom"
+       android:title="LabCheck" />
+</menu>

@@ -7,7 +7,7 @@
     android:layout_height="fill_parent"
     android:background="@android:color/background_light"
     android:id="@+id/relativeLayoutRegister">
-  <include
+    <include
         android:id="@+id/toolbar"
         layout="@layout/toolbar" />
     <EditText

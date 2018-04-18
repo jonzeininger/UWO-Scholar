@@ -5,13 +5,4 @@
        android:icon="@mipmap/ic_dehaze_black_24dp"
        android:showAsAction="ifRoom"
        android:title="Edit" />
-  <item
-       android:id="@+id/menu_save"
-       android:icon="@mipmap/ic_dehaze_black_24dp"
-       android:showAsAction="ifRoom"
-       android:title="Save" />
-  <item
-       android:id="@+id/menu_preferences"
-       android:showAsAction="ifRoom"
-       android:title="Preferences" />
 </menu>
