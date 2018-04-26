@@ -1825,6 +1825,9 @@ namespace UWOScholar
 			// aapt resource value: 0x7f0b006f
 			public const int UWOSeal = 2131427439;
 			
+			// aapt resource value: 0x7f0b0096
+			public const int Value2 = 2131427478;
+			
 			// aapt resource value: 0x7f0b007c
 			public const int action0 = 2131427452;
 			
@@ -1906,11 +1909,17 @@ namespace UWOScholar
 			// aapt resource value: 0x7f0b002f
 			public const int bottom = 2131427375;
 			
+			// aapt resource value: 0x7f0b0097
+			public const int btnAdd = 2131427479;
+			
 			// aapt resource value: 0x7f0b006a
 			public const int btnAddFolder = 2131427434;
 			
 			// aapt resource value: 0x7f0b0092
 			public const int btnAlreadyUser = 2131427474;
+			
+			// aapt resource value: 0x7f0b0093
+			public const int btnBack = 2131427475;
 			
 			// aapt resource value: 0x7f0b006e
 			public const int btnCalculator = 2131427438;
@@ -1921,14 +1930,26 @@ namespace UWOScholar
 			// aapt resource value: 0x7f0b0075
 			public const int btnCreateCard = 2131427445;
 			
+			// aapt resource value: 0x7f0b009a
+			public const int btnDivide = 2131427482;
+			
 			// aapt resource value: 0x7f0b0076
 			public const int btnEditCard = 2131427446;
+			
+			// aapt resource value: 0x7f0b0094
+			public const int btnLogOut = 2131427476;
 			
 			// aapt resource value: 0x7f0b0072
 			public const int btnLogin = 2131427442;
 			
+			// aapt resource value: 0x7f0b0099
+			public const int btnMultiply = 2131427481;
+			
 			// aapt resource value: 0x7f0b0073
 			public const int btnRegister = 2131427443;
+			
+			// aapt resource value: 0x7f0b0098
+			public const int btnSubtract = 2131427480;
 			
 			// aapt resource value: 0x7f0b003e
 			public const int buttonPanel = 2131427390;
@@ -2035,20 +2056,20 @@ namespace UWOScholar
 			// aapt resource value: 0x7f0b006c
 			public const int menu = 2131427436;
 			
-			// aapt resource value: 0x7f0b0094
-			public const int menuFolder = 2131427476;
+			// aapt resource value: 0x7f0b009c
+			public const int menuFolder = 2131427484;
 			
-			// aapt resource value: 0x7f0b0095
-			public const int menuHome = 2131427477;
+			// aapt resource value: 0x7f0b009d
+			public const int menuHome = 2131427485;
 			
-			// aapt resource value: 0x7f0b0096
-			public const int menuLabCheck = 2131427478;
+			// aapt resource value: 0x7f0b009e
+			public const int menuLabCheck = 2131427486;
 			
-			// aapt resource value: 0x7f0b0097
-			public const int menu_edit = 2131427479;
+			// aapt resource value: 0x7f0b009f
+			public const int menu_edit = 2131427487;
 			
-			// aapt resource value: 0x7f0b0093
-			public const int message = 2131427475;
+			// aapt resource value: 0x7f0b009b
+			public const int message = 2131427483;
 			
 			// aapt resource value: 0x7f0b0023
 			public const int middle = 2131427363;
@@ -2241,6 +2262,9 @@ namespace UWOScholar
 			
 			// aapt resource value: 0x7f0b008d
 			public const int txtUsername = 2131427469;
+			
+			// aapt resource value: 0x7f0b0095
+			public const int txtValue1 = 2131427477;
 			
 			// aapt resource value: 0x7f0b001f
 			public const int uniform = 2131427359;
@@ -2440,22 +2464,25 @@ namespace UWOScholar
 			public const int Register = 2130968621;
 			
 			// aapt resource value: 0x7f04002e
-			public const int select_dialog_item_material = 2130968622;
+			public const int ScientificCalculator = 2130968622;
 			
 			// aapt resource value: 0x7f04002f
-			public const int select_dialog_multichoice_material = 2130968623;
+			public const int select_dialog_item_material = 2130968623;
 			
 			// aapt resource value: 0x7f040030
-			public const int select_dialog_singlechoice_material = 2130968624;
+			public const int select_dialog_multichoice_material = 2130968624;
 			
 			// aapt resource value: 0x7f040031
-			public const int support_simple_spinner_dropdown_item = 2130968625;
+			public const int select_dialog_singlechoice_material = 2130968625;
 			
 			// aapt resource value: 0x7f040032
-			public const int toolbar = 2130968626;
+			public const int support_simple_spinner_dropdown_item = 2130968626;
 			
 			// aapt resource value: 0x7f040033
-			public const int tooltip = 2130968627;
+			public const int toolbar = 2130968627;
+			
+			// aapt resource value: 0x7f040034
+			public const int tooltip = 2130968628;
 			
 			static Layout()
 			{
