@@ -1825,9 +1825,6 @@ namespace UWOScholar
 			// aapt resource value: 0x7f0b006f
 			public const int UWOSeal = 2131427439;
 			
-			// aapt resource value: 0x7f0b0096
-			public const int Value2 = 2131427478;
-			
 			// aapt resource value: 0x7f0b007c
 			public const int action0 = 2131427452;
 			
@@ -2265,6 +2262,9 @@ namespace UWOScholar
 			
 			// aapt resource value: 0x7f0b0095
 			public const int txtValue1 = 2131427477;
+			
+			// aapt resource value: 0x7f0b0096
+			public const int txtValue2 = 2131427478;
 			
 			// aapt resource value: 0x7f0b001f
 			public const int uniform = 2131427359;

@@ -21,7 +21,7 @@
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/Value2"
+        android:id="@+id/txtValue2"
         android:hint="second number" />
     <Button
         android:text="Add"
