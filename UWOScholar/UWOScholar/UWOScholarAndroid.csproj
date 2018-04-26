@@ -97,6 +97,7 @@
     <Compile Include="LoginTable.cs" />
     <Compile Include="MainActivity.cs" />
     <Compile Include="NotecardActivity.cs" />
+    <Compile Include="NotecardTable.cs" />
     <Compile Include="RegisterActivity.cs" />
     <Compile Include="Resources\Resource.Designer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
